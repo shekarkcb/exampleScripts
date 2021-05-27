@@ -24,4 +24,6 @@ $select_db = mysql_select_db($dbName);
 if (!$select_db){
 	#die("Database Selection Failed" . mysql_error());
 	echo "ERROR: Unable to connect to database !!!";
+} else {
+	echo "Success: connected to $dbName database !!!";
 }
